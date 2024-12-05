@@ -81,15 +81,18 @@ void button_move_led_up(uint8_t led_index){
 	}
 }
 
-int main(void){	
+int main(void){
+	
+	// Turn on the pins and ports for the buttons and leds
 	init_leds();
 	init_push_buttons();
 	
+	// Turn on the first led
 	uint8_t led_index = 0;
 	switch_port_b(leds[led_index]);	
 	
-    while(1){
+	while(1){
 		button_move_led_down(led_index);
 		button_move_led_up(led_index);		
-    }
+	}
 }
