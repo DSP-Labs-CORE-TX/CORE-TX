@@ -93,6 +93,13 @@ int main(void){
 	
 	while(1){
 		button_move_led_down(led_index);
+		/*
+		// sa verificam daca am pus cablurile bine la led uri :))
+		set_port_b(0);
+		set_port_b(1);
+		set_port_b(2);
+		set_port_b(3);
+		*/
 		button_move_led_up(led_index);		
 	}
 }
